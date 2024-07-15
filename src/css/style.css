@@ -1,0 +1,190 @@
+:root {
+  --bg-black: #01080e;
+  --white: #e3f0ff;
+  --blue: #1875e9;
+  --blue-light: #6bd1ff;
+  --red: #e91e63;
+  --green: #4caf50;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  background-color: var(--bg-black);
+}
+
+body * {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header, footer {
+  padding: 20px 0;
+}
+
+main {
+  margin: 20px 0;
+}
+
+h1 {
+  color: var(--blue-light);
+  font-size: 2.875rem;
+}
+
+span.subtitle {
+  color: var(--blue-light);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+hr {
+  border-color: var(--blue-light);
+  margin: 20px 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cel {
+  width: 130px;
+  height: 130px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 128px;
+  color: var(--white);
+}
+
+#scoreboard {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 36px;
+  color: var(--blue);
+}
+
+#score {
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 36px;
+  color: var(--white);
+}
+
+.container-inputs {
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inputs input {
+  border: 1px solid var(--blue);
+  background-color: var(--bg-black);
+  padding: 5px 0;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--white);
+
+  text-align: center;
+}
+
+.container-inputs input::placeholder {
+  color: var(--white);
+  text-align: center;
+  opacity: 0.8;
+}
+
+.container-inputs input:last-of-type {
+  margin: 20px 0 60px 0;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: var(--bg-black);
+  padding: 5px 0;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.btn#start-game {
+  font-size: 1.6rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:focus, a:active, a:hover {
+  color: var(--blue-light);
+}
+
+.border-danger, .border-danger:focus, .border-danger:focus-visible {
+  border: 1px solid var(--red) !important;
+  outline: none;
+}
+
+/* custom swal2 */
+
+body.swal2-toast-shown .swal2-container {
+  width: 410px !important;
+}
+
+.swal2-popup.swal2-toast.colored-toast {
+  background-color: var(--blue);
+  color: var(--bg-black) !important;
+  font-weight: 600;
+  padding: 0.8rem;
+}
+
+.swal2-popup.swal2-toast.colored-toast.swal2-icon-error {
+  background-color: var(--red);
+}
+
+.swal2-popup.swal2-toast.colored-toast.swal2-icon-success {
+  background-color: var(--green);
+}
+
+.swal2-popup.swal2-toast.colored-toast,
+.swal2-popup.swal2-toast.colored-toast h2 {
+  font-size: 1.2rem !important;
+}
+
+.swal2-popup.swal2-toast.colored-toast * {
+  color: var(--bg-black) !important;
+  border-color: var(--bg-black) !important;
+}
+
+
+.swal2-popup.colored-toast .swal2-error .swal2-x-mark-line-right,
+.swal2-popup.colored-toast .swal2-error .swal2-x-mark-line-left,
+.swal2-popup.colored-toast .swal2-success .swal2-success-line-tip,
+.swal2-popup.colored-toast .swal2-success .swal2-success-line-long {
+  background-color: var(--bg-black) !important;
+}

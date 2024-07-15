@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./dist/js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da Velha</h1>
+      <hr>
+
+      <span class="subtitle">
+        Refatoração com TS
+      </span>
+    </header>
+
+    <main>
+      <div id="selection-players">
+          <div class="container-inputs">
+            <input class="input-name" type="text" name="nameX" placeholder="Nome do Jogador X">
+            <input class="input-name" type="text" name="nameO" placeholder="Nome do Jogador O">
+            <button id="start-game" class="btn">Iniciar jogo</button>
+          </div>
+      </div>
+
+      <div id="game" style="display: none;">
+        <div id="scoreboard">Placar: <span id="score"></span></div>
+        <div class="board" id="board">
+          <div class="cel" data-index="0"></div>
+          <div class="cel" data-index="1"></div>
+          <div class="cel" data-index="2"></div>
+          <div class="cel" data-index="3"></div>
+          <div class="cel" data-index="4"></div>
+          <div class="cel" data-index="5"></div>
+          <div class="cel" data-index="6"></div>
+          <div class="cel" data-index="7"></div>
+          <div class="cel" data-index="8"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a id="github" href="https://github.com/GabrielMarmore" target="_blank">&copy;Mármore</a>
+    </footer>
+  </body>
+</html>
