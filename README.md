@@ -1,4 +1,4 @@
-# Jogo da Velha em TypeScript
+# <a href="https://gabrielmarmore.github.io/Jogo-da-velha-ts/">🔗Jogo da Velha em TypeScript</a>
 
 Este projeto é uma refatoração da aplicação clássica de Jogo da Velha (Tic-Tac-Toe) de JavaScript para TypeScript, seguindo o artigo da Alura para aprimoramento.
 
